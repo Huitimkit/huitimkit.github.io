@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-103083699-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>KFE 第1期 | KFE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="推荐浏览器的渲染原理简介让大家了解浏览器的渲染原理，能写出更加高效的界面（html，css，js）浏览器 安湘推荐         我的架构经验系列文章 - 前端架构前端架构是一个很大的方面，不再是简单的html，css，js，现在更是涵盖了运营、设计、后台以及产品项目管理前端架构 阳强推荐  Javascript【译】JavaScript 中的“纯函数”“纯函数”名字很新鲜，但是使用纯函数之后能">
+<meta name="keywords" content="KEF 第1期">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KFE 第1期">
+<meta property="og:url" content="huitimkit.github.io/2016/05/13/KFE 第1期/index.html">
+<meta property="og:site_name" content="KFE">
+<meta property="og:description" content="推荐浏览器的渲染原理简介让大家了解浏览器的渲染原理，能写出更加高效的界面（html，css，js）浏览器 安湘推荐         我的架构经验系列文章 - 前端架构前端架构是一个很大的方面，不再是简单的html，css，js，现在更是涵盖了运营、设计、后台以及产品项目管理前端架构 阳强推荐  Javascript【译】JavaScript 中的“纯函数”“纯函数”名字很新鲜，但是使用纯函数之后能">
+<meta property="og:locale" content="zh">
+<meta property="og:updated_time" content="2020-03-30T10:02:13.018Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="KFE 第1期">
+<meta name="twitter:description" content="推荐浏览器的渲染原理简介让大家了解浏览器的渲染原理，能写出更加高效的界面（html，css，js）浏览器 安湘推荐         我的架构经验系列文章 - 前端架构前端架构是一个很大的方面，不再是简单的html，css，js，现在更是涵盖了运营、设计、后台以及产品项目管理前端架构 阳强推荐  Javascript【译】JavaScript 中的“纯函数”“纯函数”名字很新鲜，但是使用纯函数之后能">
+  
+    <link rel="alternate" href="/atom.xml" title="KFE" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <script data-ad-client="ca-pub-9491770977802867" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner">
+    <div id="cover"></div>
+    <div id="stars"></div>
+  </div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo" class="logo">
+          <span>K</span>
+          <span>F</span>
+          <span>E</span>
+        </a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="huitimkit.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-KFE 第1期" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/13/KFE 第1期/" class="article-date">
+  <time datetime="2016-05-13T13:04:00.000Z" itemprop="datePublished">2016-05-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/2016/">2016</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      KFE 第1期
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><h3 id="浏览器的渲染原理简介"><a href="#浏览器的渲染原理简介" class="headerlink" title="浏览器的渲染原理简介"></a><a href="http://coolshell.cn/articles/9666.html" target="_blank" rel="noopener">浏览器的渲染原理简介</a></h3><p>让大家了解浏览器的渲染原理，能写出更加高效的界面（html，css，js）<br><code>浏览器</code> <strong>安湘推荐</strong>        </p>
+<h3 id="我的架构经验系列文章-前端架构"><a href="#我的架构经验系列文章-前端架构" class="headerlink" title="我的架构经验系列文章 - 前端架构"></a><a href="http://www.pmtoo.com/news/2014/0724/6340.html" target="_blank" rel="noopener">我的架构经验系列文章 - 前端架构</a></h3><p>前端架构是一个很大的方面，不再是简单的html，css，js，现在更是涵盖了运营、设计、后台以及产品项目管理<br><code>前端架构</code> <strong>阳强推荐</strong> </p>
+<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><h3 id="【译】JavaScript-中的“纯函数”"><a href="#【译】JavaScript-中的“纯函数”" class="headerlink" title="【译】JavaScript 中的“纯函数”"></a><a href="https://www.h5jun.com/post/pure-function.html#rd?sukey=fa67fe3435f5c4be8299901b64e16322e4be1ed7176f37ba021d7a7ba88c59d865473d4481c08f9899884c191b6fa377" target="_blank" rel="noopener">【译】JavaScript 中的“纯函数”</a></h3><p>“纯函数”名字很新鲜，但是使用纯函数之后能让你的代码简单清晰，降低以后的维护成本<br><code>Javascript</code> <code>纯函数</code>  </p>
+<h3 id="分享一些前端开发中最常用的JS代码片段"><a href="#分享一些前端开发中最常用的JS代码片段" class="headerlink" title="分享一些前端开发中最常用的JS代码片段"></a><a href="http://www.w3cfuns.com/notes/25068/1d0d350a974d879e63f1115cf80a3288.html" target="_blank" rel="noopener">分享一些前端开发中最常用的JS代码片段</a></h3><p>一些前端开发中最常用的JS代码片段，干货<br><code>Javascript</code>  <strong>金根推荐</strong></p>
+<h3 id="不会定义-jQuery-插件，不要说会-jQuery"><a href="#不会定义-jQuery-插件，不要说会-jQuery" class="headerlink" title="不会定义 jQuery 插件，不要说会 jQuery"></a><a href="http://web.jobbole.com/86088/" target="_blank" rel="noopener">不会定义 jQuery 插件，不要说会 jQuery</a></h3><p>开发一个插件的基础知识<br><code>Javascript</code> <code>jquery插件</code> </p>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h3 id="SASS用法指南"><a href="#SASS用法指南" class="headerlink" title="SASS用法指南"></a><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></h3><p>SASS基础教程，入门好帮手，用后都说好！<br><code>CSS</code> <code>SASS</code> <strong>余磊推荐</strong>    </p>
+<h3 id="【福利】乳摇动画初探"><a href="#【福利】乳摇动画初探" class="headerlink" title="【福利】乳摇动画初探"></a><a href="http://www.alloyteam.com/2015/08/fu-li-ru-yao-dong-hua-chu-tan/" target="_blank" rel="noopener">【福利】乳摇动画初探</a></h3><p>张承没有说明推荐理由，估计是害羞，里面来一波福利<br><code>CSS</code> <code>动画</code> <strong>张承推荐</strong> </p>
+<h3 id="Restart-CSS-Animation"><a href="#Restart-CSS-Animation" class="headerlink" title="Restart CSS Animation"></a><a href="https://css-tricks.com/restart-css-animation/" target="_blank" rel="noopener">Restart CSS Animation</a></h3><p>套路简单实现重启动画<br><code>CSS</code> <code>动画</code> <strong>廷俊推荐</strong></p>
+<h3 id="好吧，CSS3-3D-transform变换，不过如此！"><a href="#好吧，CSS3-3D-transform变换，不过如此！" class="headerlink" title="好吧，CSS3 3D transform变换，不过如此！"></a><a href="http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/" target="_blank" rel="noopener">好吧，CSS3 3D transform变换，不过如此！</a></h3><p>学坤说配图不错<br><code>CSS</code> <code>动画</code> <strong>学坤推荐</strong></p>
+<h2 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a>用户体验</h2><h3 id="产品容错性设计原则"><a href="#产品容错性设计原则" class="headerlink" title="产品容错性设计原则"></a><a href="http://card.weibo.com/article/h5/s#cid=1001603974086136077983&vid=1907419512&extparam=&from=1065095010&wm=9848_0009&ip=203.166.220.2" target="_blank" rel="noopener">产品容错性设计原则</a></h3><p>随着互联网的飞速发展，越来越多产品尤其是2C类产品更加注重用户体验，其中错误对用户体验的影响是灾难性的，作者总结出一些容错性设计原则供大家参考和探讨<br><code>用户体验</code> <code>产品容错</code> </p>
+<p><em>文章整理来自互联网，不作商业用途，如侵权，请联系删除</em></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="huitimkit.github.io/2016/05/13/KFE 第1期/" data-id="ck8eb06fe000v0zhq5z5a5q51" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KEF-第1期/">KEF 第1期</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/21/KFE 第2期/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          KFE 第2期
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/06/KFE 第0期/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">KFE 第0期</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+	<h3 class="widget-title">Friendship link</h3>
+	<div class="widget tagcloud">
+	  <ul>
+	  	<li>
+	  		<a href="http://zengxiaoluan.com/">曾小乱 – web艺术家、作者</a>
+	  	</li>
+	  </ul>
+	</div>
+</div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/2016/">2016</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2017/">2017</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2020/">2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/19/KFE 第49期/">KFE 第49期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/18/KFE 第48期/">KFE 第48期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/16/KFE 第47期/">KFE 第47期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/06/KFE 第46期/">KFE 第46期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/05/KFE 第45期/">KFE 第45期</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 10438<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-103083699-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>KFE 第3期 | KFE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="React &amp;amp; React Native深度剖析：如何实现一个 Virtual DOM 算法深入理解Virtual DOM算法，学习Virtual DOM算法的思想React  React-Native痛点解析之开发环境搭建及扩展React Native痛点解析之性能调优React Native  性能优化如何减少浏览器repaint和reflow了解什么是repaint/reflow，页">
+<meta name="keywords" content="KEF 第3期">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KFE 第3期">
+<meta property="og:url" content="huitimkit.github.io/2016/05/27/KFE 第3期/index.html">
+<meta property="og:site_name" content="KFE">
+<meta property="og:description" content="React &amp;amp; React Native深度剖析：如何实现一个 Virtual DOM 算法深入理解Virtual DOM算法，学习Virtual DOM算法的思想React  React-Native痛点解析之开发环境搭建及扩展React Native痛点解析之性能调优React Native  性能优化如何减少浏览器repaint和reflow了解什么是repaint/reflow，页">
+<meta property="og:locale" content="zh">
+<meta property="og:updated_time" content="2020-03-30T10:02:13.018Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="KFE 第3期">
+<meta name="twitter:description" content="React &amp;amp; React Native深度剖析：如何实现一个 Virtual DOM 算法深入理解Virtual DOM算法，学习Virtual DOM算法的思想React  React-Native痛点解析之开发环境搭建及扩展React Native痛点解析之性能调优React Native  性能优化如何减少浏览器repaint和reflow了解什么是repaint/reflow，页">
+  
+    <link rel="alternate" href="/atom.xml" title="KFE" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <script data-ad-client="ca-pub-9491770977802867" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner">
+    <div id="cover"></div>
+    <div id="stars"></div>
+  </div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo" class="logo">
+          <span>K</span>
+          <span>F</span>
+          <span>E</span>
+        </a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="huitimkit.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-KFE 第3期" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/27/KFE 第3期/" class="article-date">
+  <time datetime="2016-05-27T15:44:00.000Z" itemprop="datePublished">2016-05-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/2016/">2016</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      KFE 第3期
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="React-amp-React-Native"><a href="#React-amp-React-Native" class="headerlink" title="React &amp; React Native"></a>React &amp; React Native</h2><h3 id="深度剖析：如何实现一个-Virtual-DOM-算法"><a href="#深度剖析：如何实现一个-Virtual-DOM-算法" class="headerlink" title="深度剖析：如何实现一个 Virtual DOM 算法"></a><a href="https://github.com/livoras/blog/issues/13" target="_blank" rel="noopener">深度剖析：如何实现一个 Virtual DOM 算法</a></h3><p>深入理解Virtual DOM算法，学习Virtual DOM算法的思想<br><code>React</code> </p>
+<h3 id="React-Native痛点解析之开发环境搭建及扩展"><a href="#React-Native痛点解析之开发环境搭建及扩展" class="headerlink" title="React-Native痛点解析之开发环境搭建及扩展"></a><a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=403225766&idx=1&sn=acd8e3ab7f234b97827c3e210c2d8673#rd" target="_blank" rel="noopener">React-Native痛点解析之开发环境搭建及扩展</a></h3><h3 id="React-Native痛点解析之性能调优"><a href="#React-Native痛点解析之性能调优" class="headerlink" title="React Native痛点解析之性能调优"></a><a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112293&idx=1&sn=866971daf7dba22186d2c09d1bac2418" target="_blank" rel="noopener">React Native痛点解析之性能调优</a></h3><p><code>React Native</code> </p>
+<h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><h3 id="如何减少浏览器repaint和reflow"><a href="#如何减少浏览器repaint和reflow" class="headerlink" title="如何减少浏览器repaint和reflow"></a><a href="http://www.cnblogs.com/fullhouse/archive/2012/02/20/2360301.html" target="_blank" rel="noopener">如何减少浏览器repaint和reflow</a></h3><p>了解什么是repaint/reflow，页面哪些操作会引起repaint/reflow，及简单的优化技巧<br><code>repaint/reflow</code></p>
+<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><h3 id="Javascript-面向对象编程（一）：封装"><a href="#Javascript-面向对象编程（一）：封装" class="headerlink" title="Javascript 面向对象编程（一）：封装"></a><a href="http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html" target="_blank" rel="noopener">Javascript 面向对象编程（一）：封装</a></h3><p>如果你还不知道Javascript面向对象编程，那你一定要看这里<br><code>Javascript</code> <code>面向对象编程</code> <strong>阳强推荐</strong></p>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h3 id="The-30-CSS-Selectors-You-Must-Memorize"><a href="#The-30-CSS-Selectors-You-Must-Memorize" class="headerlink" title="The 30 CSS Selectors You Must Memorize"></a><a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank" rel="noopener">The 30 CSS Selectors You Must Memorize</a></h3><p>廷俊：重溫經典，寫出不尋常，別人看不懂的CSS就靠這個了<br><code>CSS</code> <code>动画</code> <strong>廷俊推荐</strong></p>
+<h2 id="福利"><a href="#福利" class="headerlink" title="福利"></a>福利</h2><h3 id="前端网站收藏"><a href="#前端网站收藏" class="headerlink" title="前端网站收藏"></a><a href="http://www.w3cfuns.com/notes/16499/4f26424cc6be7bd1d2c6bec79b038595.html" target="_blank" rel="noopener">前端网站收藏</a></h3><p><code>前端资源</code> <strong>金根推荐</strong></p>
+<h3 id="比迅雷还要快的视频下载利器You-Get"><a href="#比迅雷还要快的视频下载利器You-Get" class="headerlink" title="比迅雷还要快的视频下载利器You-Get"></a><a href="http://codingpy.com/article/using-you-get-to-download-videos/" target="_blank" rel="noopener">比迅雷还要快的视频下载利器You-Get</a></h3><p>好用的利器，可是安装比较麻烦，没有安装成功，32位系统的可以尝试<br><code>You-Get</code></p>
+<p><em>文章整理来自互联网，不作商业用途，如侵权，请联系删除</em></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="huitimkit.github.io/2016/05/27/KFE 第3期/" data-id="ck8eb06gg002j0zhqyc57rxzt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KEF-第3期/">KEF 第3期</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/03/KFE 第4期/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          KFE 第4期
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/21/KFE 第2期/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">KFE 第2期</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+	<h3 class="widget-title">Friendship link</h3>
+	<div class="widget tagcloud">
+	  <ul>
+	  	<li>
+	  		<a href="http://zengxiaoluan.com/">曾小乱 – web艺术家、作者</a>
+	  	</li>
+	  </ul>
+	</div>
+</div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/2016/">2016</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2017/">2017</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2020/">2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/19/KFE 第49期/">KFE 第49期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/18/KFE 第48期/">KFE 第48期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/16/KFE 第47期/">KFE 第47期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/06/KFE 第46期/">KFE 第46期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/05/KFE 第45期/">KFE 第45期</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 10438<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

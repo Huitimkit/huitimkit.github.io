@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-103083699-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>KFE 第41期 | KFE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一周推荐JavaScript 包管理的前世今生文章涉及了多知识点，不懂地方需要自己关注。 Yarn npm Grab 前端技术指南(上)Grab 前端技术指南(中)Grab 前端技术指南(下)内容虽然有点多，但是却可以更快帮助新员工熟悉Grab的开发技术栈。 前端指南 Chrome浏览器控制台（console）花式调试console不止只有log这个方法，还有dir，time，assert等等调试">
+<meta name="keywords" content="KEF 第41期">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KFE 第41期">
+<meta property="og:url" content="huitimkit.github.io/2017/08/16/KFE 第41期/index.html">
+<meta property="og:site_name" content="KFE">
+<meta property="og:description" content="一周推荐JavaScript 包管理的前世今生文章涉及了多知识点，不懂地方需要自己关注。 Yarn npm Grab 前端技术指南(上)Grab 前端技术指南(中)Grab 前端技术指南(下)内容虽然有点多，但是却可以更快帮助新员工熟悉Grab的开发技术栈。 前端指南 Chrome浏览器控制台（console）花式调试console不止只有log这个方法，还有dir，time，assert等等调试">
+<meta property="og:locale" content="zh">
+<meta property="og:updated_time" content="2020-03-30T10:02:13.018Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="KFE 第41期">
+<meta name="twitter:description" content="一周推荐JavaScript 包管理的前世今生文章涉及了多知识点，不懂地方需要自己关注。 Yarn npm Grab 前端技术指南(上)Grab 前端技术指南(中)Grab 前端技术指南(下)内容虽然有点多，但是却可以更快帮助新员工熟悉Grab的开发技术栈。 前端指南 Chrome浏览器控制台（console）花式调试console不止只有log这个方法，还有dir，time，assert等等调试">
+  
+    <link rel="alternate" href="/atom.xml" title="KFE" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <script data-ad-client="ca-pub-9491770977802867" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner">
+    <div id="cover"></div>
+    <div id="stars"></div>
+  </div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo" class="logo">
+          <span>K</span>
+          <span>F</span>
+          <span>E</span>
+        </a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="huitimkit.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-KFE 第41期" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/16/KFE 第41期/" class="article-date">
+  <time datetime="2017-08-16T16:06:00.000Z" itemprop="datePublished">2017-08-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/2017/">2017</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      KFE 第41期
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一周推荐"><a href="#一周推荐" class="headerlink" title="一周推荐"></a>一周推荐</h2><h3 id="JavaScript-包管理的前世今生"><a href="#JavaScript-包管理的前世今生" class="headerlink" title="JavaScript 包管理的前世今生"></a><a href="http://www.zcfy.cc/article/untangling-package-management-in-javascript-applications-3706.html" target="_blank" rel="noopener">JavaScript 包管理的前世今生</a></h3><p>文章涉及了多知识点，不懂地方需要自己关注。</p>
+<p><code>Yarn</code> <code>npm</code></p>
+<h3 id="Grab-前端技术指南-上"><a href="#Grab-前端技术指南-上" class="headerlink" title="Grab 前端技术指南(上)"></a><a href="https://mp.weixin.qq.com/s?__biz=MzI2MTY0NTEyMA==&mid=2247483958&idx=1&sn=43d1618b9a7045596e9abeb4a393c9c0&chksm=ea567419dd21fd0f0be1e04eb2cb752eea2f0f8a743a881d95d107b406dd0c5f677be55ca6cf&scene=21#wechat_redirect" target="_blank" rel="noopener">Grab 前端技术指南(上)</a></h3><h3 id="Grab-前端技术指南-中"><a href="#Grab-前端技术指南-中" class="headerlink" title="Grab 前端技术指南(中)"></a><a href="https://mp.weixin.qq.com/s?__biz=MzI2MTY0NTEyMA==&mid=2247483980&idx=1&sn=935a261c5aff4f557ab569b1c0977134&chksm=ea567463dd21fd750d85d15d0220852969b8a379e063f386259b920858c75b1902f4adcb8f10&scene=21#wechat_redirect" target="_blank" rel="noopener">Grab 前端技术指南(中)</a></h3><h3 id="Grab-前端技术指南-下"><a href="#Grab-前端技术指南-下" class="headerlink" title="Grab 前端技术指南(下)"></a><a href="https://mp.weixin.qq.com/s?__biz=MzI2MTY0NTEyMA==&mid=2247484042&idx=1&sn=49022051b018f0251b9538a80f03ba1b&chksm=ea5674a5dd21fdb305e92a594351644e7cfd06a1cad86e2426e4837848faa1f8ac3f87481269&mpshare=1&scene=1&srcid=0809XjEXR6JIo9VWZZOaa62a#rd" target="_blank" rel="noopener">Grab 前端技术指南(下)</a></h3><p>内容虽然有点多，但是却可以更快帮助新员工熟悉Grab的开发技术栈。</p>
+<p><code>前端指南</code></p>
+<h3 id="Chrome浏览器控制台（console）花式调试"><a href="#Chrome浏览器控制台（console）花式调试" class="headerlink" title="Chrome浏览器控制台（console）花式调试"></a><a href="https://mp.weixin.qq.com/s?__biz=MzAwMzA0NDc1MA==&mid=2448636891&idx=1&sn=def386a6359ad22ef5cef6e57050e829&chksm=8ec6bf3ab9b1362c062b85de3fe3ac4c4fcaa1a8195071ee38b167e511d76bc3fd9219720c7f&mpshare=1&scene=1&srcid=0810RmVIC6l9TMNkbt1To3cS#rd" target="_blank" rel="noopener">Chrome浏览器控制台（console）花式调试</a></h3><p>console不止只有log这个方法，还有dir，time，assert等等调试的技巧</p>
+<p><code>console</code></p>
+<h3 id="移动web资源整理"><a href="#移动web资源整理" class="headerlink" title="移动web资源整理"></a><a href="http://www.cnblogs.com/PeunZhang/p/3407453.html#meta_4" target="_blank" rel="noopener">移动web资源整理</a></h3><p>非常全的移动Web资源整理，简直造福程序员</p>
+<p><code>移动web</code></p>
+<h2 id="一周技能加油站"><a href="#一周技能加油站" class="headerlink" title="一周技能加油站"></a>一周技能加油站</h2><p>相信很多前端er对cookie的印象，基本都是停留在set cookie的value以及expires,但是cookie其实远没有我们了解的这两个属性。今天回顾什么是cookie</p>
+<h4 id="什么是cookie"><a href="#什么是cookie" class="headerlink" title="什么是cookie?"></a>什么是cookie?</h4><ul>
+<li>Cookie 就是浏览器储存在用户电脑上的一小段文本文件</li>
+<li>Cookie 是纯文本格式，不包含任何可执行的代码</li>
+<li>Cookie 由键值对构成，由分号和空格隔开</li>
+<li>Cookie 虽然是存储在浏览器，但是通常由服务器端进行设置</li>
+<li>Cookie 的大小限制在 4kb 左右</li>
+</ul>
+<h4 id="Cookie-的属性选项"><a href="#Cookie-的属性选项" class="headerlink" title="Cookie 的属性选项"></a>Cookie 的属性选项</h4><ul>
+<li><p>expires</p>
+<p><strong>expires</strong>用来设置cookie的失效时间，且是GMT 格式的时间（可以通过 new Date().toGMTString() 或者 new Date().toUTCString() 来获得）。</p>
+<p>cookie失效之后，document.cookie就访问不到这个cookie了，请求的时候也不会带上这个cookie。</p>
+</li>
+</ul>
+<ul>
+<li><p>max-age</p>
+<p><strong>max-age</strong>也是控制cookie的失效时刻。在新的 http/1.1 协议中 expires 已经由 max-age 选项代替。</p>
+<p><strong>*max-age</strong> 的值是一个以<strong>秒</strong>为单位时间段 (<strong>Cookie 失效时刻 = 创建时刻 + max-age</strong>)</p>
+</li>
+</ul>
+<blockquote>
+<p>优先级：同时设置了 max-age 和 expires，以 max-age 的时间为准</p>
+</blockquote>
+<ul>
+<li><p>domain</p>
+<p><strong>domain</strong> 默认值为设置该 Cookie 的网页所在的域名</p>
+</li>
+<li><p>path</p>
+<p><strong>path</strong> 默认值为设置该 Cookie 的网页所在的目录。</p>
+<blockquote>
+<p>name、path 和 domain 是唯一标识一个 Cookie </p>
+</blockquote>
+</li>
+<li><p>secure</p>
+<p><strong>secure</strong>选项用来设置 Cookie 只在确保安全的请求中才会发送。当请求是 HTTPS 或者其他安全协议时，包含 secure 选项的 Cookie 才能被保存到浏览器或者发送至服务器。</p>
+</li>
+<li><p>httpOnly</p>
+<p>选项用来设置 Cookie 是否能通过 js 去访问。默认情况下，Cookie 不会带 httpOnly 选项(即为空)，客户端是可以通过 js 代码去访问（包括读取、修改、删除等）这个 Cookie 的。当 Cookie 带 httpOnly 选项时，客户端则无法通过 js 代码去访问（包括读取、修改、删除等）这个 Cookie。</p>
+<p>这种类型的 Cookie 只能通过服务端来设置，发送请求的时候，我们看到请求头还是会带上这个设置了 httpOnly 的 Cookie</p>
+</li>
+</ul>
+<h4 id="客户端设置-Cookie"><a href="#客户端设置-Cookie" class="headerlink" title="客户端设置 Cookie"></a>客户端设置 Cookie</h4><p>可以设置 Cookie 的下列选项：expires、domain、path，各个键值对之间都要用 ; 和 空格 隔开</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.cookie=&apos;name=value; expires=Thu, 26 Feb 2116 11:50:25 GMT; domain=sankuai.com; path=/&apos;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>secure</p>
+<p>只有在 https 协议的网页中，客户端设置 secure 类型的 Cookie 才能成功</p>
+</li>
+<li><p>HttpOnly</p>
+<p>客户端中无法设置 HttpOnly 选项</p>
+</li>
+</ul>
+<h4 id="重要点"><a href="#重要点" class="headerlink" title="重要点"></a>重要点</h4><ul>
+<li><p>删除一个cookie，只要将一个cookie的max-age设置为0，就可以删除</p>
+</li>
+<li><p>Cookie 的作用域和作用路径</p>
+<p>只要满足作用域和作用路径，请求就会带上 Cookie，即使端口号不一样。</p>
+<p>子域会带上父域的cookie。</p>
+<p>子路径也会带上父路径的cookie，但是父路径无法带上子路径内的cookie。</p>
+</li>
+</ul>
+<p>参考：<br><a href="http://mertensming.github.io/2016/10/20/practice-cookie/#Cookie-的作用域和作用路径" target="_blank" rel="noopener">Cookie 在前端中的实践</a></p>
+<h2 id="一周挑战（每周提供一道面试题）"><a href="#一周挑战（每周提供一道面试题）" class="headerlink" title="一周挑战（每周提供一道面试题）"></a>一周挑战（每周提供一道面试题）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">什么是函数节流？</span><br><span class="line"></span><br><span class="line">由于在浏览器中，如果频繁的操作DOM，会相当消耗性能，通过函数节流的方式则可以大大减少对DOM的操作。</span><br><span class="line"></span><br><span class="line">所谓函数节流，就是让一个函数无法在很短的时间间隔内连续调用，只有等到上一个函数执行后过了你规定的时间间隔，才能进行下一次调用。</span><br><span class="line"></span><br><span class="line">具体实现：</span><br><span class="line">// 方法一：JavaScript高级程序设计</span><br><span class="line">var throttle = function(method, context)&#123;</span><br><span class="line">    </span><br><span class="line">    clearTimeout(method.id)</span><br><span class="line">    method.id = setTimeout(function() &#123;</span><br><span class="line">        method.apply(context)</span><br><span class="line">    &#125;, 100)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 调用</span><br><span class="line">window.onresize = function() &#123;</span><br><span class="line">    throttle(myFunc)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方法二： impress</span><br><span class="line">var throttle = function(fn, delay) &#123;</span><br><span class="line">    var timer = null</span><br><span class="line">    return function() &#123;</span><br><span class="line">        var context = this, args = argument</span><br><span class="line">        clearTimeout(timer)</span><br><span class="line">        timer = setTimeout(function() &#123;</span><br><span class="line">            fn.apply(context, args)</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">window.onresize = throttle(myFunc, 100)</span><br></pre></td></tr></table></figure>
+
+<h3 id="一周段子"><a href="#一周段子" class="headerlink" title="一周段子"></a>一周段子</h3><p>去姐家蹭饭，蒸螃蟹，姐夫夹了一个给我。四岁的小外甥女：”爸爸你吃“。”爸爸不吃，留给小姨和宝宝吃“。小外甥女：”爸爸你不能这样，你要对自己好一点，你天天跟牛似的还不吃饭，你累死了，会有别的叔叔花你的钱，住你的房子，睡你的老婆，打你的宝宝的！吃！赶紧吃</p>
+<p><em>文章整理来自互联网，不作商业用途，如侵权，请联系删除</em></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="huitimkit.github.io/2017/08/16/KFE 第41期/" data-id="ck8eb06gj002p0zhq6pj6z1du" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KEF-第41期/">KEF 第41期</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/09/11/KFE 第42期/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          KFE 第42期
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/31/KFE 第40期/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">KFE 第40期</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+	<h3 class="widget-title">Friendship link</h3>
+	<div class="widget tagcloud">
+	  <ul>
+	  	<li>
+	  		<a href="http://zengxiaoluan.com/">曾小乱 – web艺术家、作者</a>
+	  	</li>
+	  </ul>
+	</div>
+</div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/2016/">2016</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2017/">2017</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2020/">2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/19/KFE 第49期/">KFE 第49期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/18/KFE 第48期/">KFE 第48期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/16/KFE 第47期/">KFE 第47期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/06/KFE 第46期/">KFE 第46期</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/05/KFE 第45期/">KFE 第45期</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 10438<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
